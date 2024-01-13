@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIM Service Settings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SIM Service Settings</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Network Settings</h2>
+            <label for="networkMode">Network Mode:</label>
+            <select id="networkMode" name="networkMode">
+                <option value="5g">5G</option>
+                <option value="4g">4G</option>
+                <option value="3g">3G</option>
+
+              
+              
+            </select>
+
+            <label for="roaming">Roaming:</label>
+            <input type="checkbox" id="roaming" name="roaming"> Enable Roaming
+        </section>
+
+        <section>
+            <h2>Security Settings</h2>
+            <label for="pin">PIN:</label>
+            <input type="password" id="pin" name="pin" maxlength="4" placeholder="Enter your PIN">
+
+            <label for="puk">PUK:</label>
+            <input type="password" id="puk" name="puk" maxlength="8" placeholder="Enter your PUK">
+        </section>
+
+        <button type="button">Save Settings</button>
+    </main>
+</body>
+</html>
